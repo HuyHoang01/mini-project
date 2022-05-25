@@ -7,11 +7,32 @@
 }
 
 button {
-    margin: 0 10px;
+    border: 1px solid #333;
+    background-color: #6e8cf2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 15px;
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+
+table thead {
+    background-color: #6e8cf2;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #dceaff;
 }
 
 .container table td, th {
-    border: 1px solid #333;
     padding: 5px 15px;
 }
 

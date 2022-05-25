@@ -36,6 +36,7 @@ export class AppComponent implements OnInit, OnChanges {
 
     onCreate(event: Student){
         if(this.students.some((student) => student.id === event.id)){
+            alert('Id đã tồn tại!')
             return
         }
         this.studentService.createStudent(event).subscribe((data: Student) => this.students.push(data))

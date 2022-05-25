@@ -6,3 +6,26 @@ table {
 table tr, td {
     padding: 3px 5px;
 }
+
+button {
+    border: 1px solid #333;
+    background-color: #6e8cf2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #34457c;
+}
