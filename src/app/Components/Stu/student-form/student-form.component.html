@@ -1,0 +1,97 @@
+    <div *ngIf="!editing">
+        <h3>Form thêm sinh viên</h3>
+        <form #form="ngForm" novalidate (ngSubmit)="handleSubmit(form.value, form.valid, form)">
+        <table>
+            <tr>
+                <td>
+                    <label for="id">Mã: </label>
+                </td>
+                <td>
+                    <input type="number" min="1" name="id" id="id" ngModel #id="ngModel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Tên: </label>
+                </td>
+                <td>
+                    <input type="text" name="fullName" id="name" ngModel #fullName="ngModel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">SĐT: </label>
+                </td>
+                <td>
+                    <input type="text" name="phone" id="phone" ngModel #phone="ngModel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email: </label>
+                </td>
+                <td>
+                    <input type="text" name="email" id="email" ngModel #email="ngModel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" [disabled]="form.invalid">
+                        Thêm
+                    </button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+
+
+    <div *ngIf="editing">
+        <h3>Form sửa sinh viên</h3>
+        <form #form="ngForm" novalidate (ngSubmit)="handleEdit(form.value, form.valid)">
+        <table>
+            <tr>
+                <td>
+                    <label for="id">Mã: </label>
+                </td>
+                <td>
+                    <input type="number" min="1" name="id" id="id" [ngModel]="editStudent!.id" #id="ngModel" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Tên: </label>
+                </td>
+                <td>
+                    <input type="text" name="fullName" id="name" [ngModel]="editStudent!.fullName" #fullName="ngModel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">SĐT: </label>
+                </td>
+                <td>
+                    <input type="text" name="phone" id="phone" [ngModel]="editStudent!.phone" #phone="ngModel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email: </label>
+                </td>
+                <td>
+                    <input type="text" name="email" id="email" [ngModel]="editStudent!.email" #email="ngModel">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" [disabled]="form.invalid">
+                        Sửa
+                    </button>
+                    <button type="button" (click)="handleCancel()">
+                        Huỷ
+                    </button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>

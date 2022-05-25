@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Danh sách sinh viên</h3>
+        <table>
+            <tr>
+                <th>
+                    Mã
+                </th>
+                <th>
+                    Tên
+                </th>
+                <th>
+                    SĐT
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Thao tác
+                </th>
+            </tr>
+            <tr *ngFor="let student of students">
+                <td>
+                    {{student.id}}
+                </td>
+                <td>
+                    {{student.fullName}}
+                </td>
+                <td>
+                    {{student.phone}}
+                </td>
+                <td>
+                    {{student.email}}
+                </td>
+                <td>
+                    <button (click)="handleEdit(student)">
+                        Sửa
+                    </button>
+                    <button (click)="handleDelete(student)">
+                        Xoá
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

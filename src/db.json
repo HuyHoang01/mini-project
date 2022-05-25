@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "fullName": "Sinh viên 1",
+      "phone": "0123456781",
+      "email": "sv2@gmail.com"
+    },
+    {
+      "id": 2,
+      "fullName": "Sinh viên 2",
+      "phone": "0123456782",
+      "email": "sv2@gmail.com"
+    },
+    {
+      "id": 3,
+      "fullName": "Sinh viên 3",
+      "phone": "0123456783",
+      "email": "sv3@gmail.com"
+    },
+    {
+      "id": 4,
+      "fullName": "Sinh viên 4",
+      "phone": "0123456784",
+      "email": "sv4@gmail.com"
+    },
+    {
+      "id": 5,
+      "fullName": "Sinh viên 5",
+      "phone": "0123456785",
+      "email": "sv5@gmail.com"
+    },
+    {
+      "id": 1315,
+      "fullName": "sinh vien 6",
+      "phone": "11531531354",
+      "email": "sv6@gmail.com"
+    },
+    {
+      "id": 14123,
+      "fullName": "514",
+      "phone": "321",
+      "email": "efgh"
+    },
+    {
+      "id": 154,
+      "fullName": "safasd",
+      "phone": "dfsafas",
+      "email": "abcd"
+    }
+  ]
+}

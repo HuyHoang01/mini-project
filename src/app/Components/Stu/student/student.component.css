@@ -1,0 +1,21 @@
+.container {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 50px; */
+}
+
+button {
+    margin: 0 10px;
+}
+
+.container table td, th {
+    border: 1px solid #333;
+    padding: 5px 15px;
+}
+
+.container table tr td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
