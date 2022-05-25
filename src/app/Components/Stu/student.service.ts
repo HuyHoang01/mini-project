@@ -34,13 +34,6 @@ export class StudentService {
         )
     }
 
-    getStudent(id: number): Observable<Student>{
-        return this.http.get<Student>(`${URL_API}/${id}`).pipe(
-            tap(data => console.log(data)),
-            catchError(this.handleError<Student>('getStudent'))
-        )
-    }
-
     updateStudent(student: Student): Observable<Student>{
         let headers = new HttpHeaders({'Content-Type': 'application/json'})
 
