@@ -2,7 +2,7 @@
   "students": [
     {
       "id": 1,
-      "fullName": "Sinh viên 1",
+      "fullName": "Sinh viên 100",
       "phone": "0123456781",
       "email": "sv2@gmail.com"
     },
@@ -29,24 +29,6 @@
       "fullName": "Sinh viên 5",
       "phone": "0123456785",
       "email": "sv5@gmail.com"
-    },
-    {
-      "id": 1315,
-      "fullName": "sinh vien 6",
-      "phone": "11531531354",
-      "email": "sv6@gmail.com"
-    },
-    {
-      "id": 14123,
-      "fullName": "514",
-      "phone": "321",
-      "email": "efgh"
-    },
-    {
-      "id": 123,
-      "fullName": "fasf12324214",
-      "phone": "ggav42421",
-      "email": "rfqerdswq431431431"
     }
   ]
 }
